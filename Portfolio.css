@@ -3,6 +3,13 @@
 	src: url('./font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 html
 {
 scroll-behavior: smooth;
@@ -29,9 +36,15 @@ scroll-behavior: smooth;
     text-align: center;
     font-size: 24px;
     margin-right: 10px;
-    padding: 14px 16px;
+    padding: 14px ;
     text-decoration: none;
     position: relative;
+    border-bottom: 2px solid transparent;
+    transition:  .55s ease;
+}
+.NavBar li  a:hover
+{
+  border-bottom: 2px solid black;
 }
 .NavBar ul
 {
@@ -41,30 +54,10 @@ scroll-behavior: smooth;
     overflow: hidden;
   
 }
-.NavBar li a::before
-{
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: #333;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.2s ease-out; 
-   
-}
-.NavBar li a:hover::before
-{
- transform: scaleX(1);
-  transform-origin: bottom left;
-}
 
-.NavBar img
-{
-float: right;
-}
+
+
+
 body
 {
     background-color: #fff;
@@ -236,40 +229,23 @@ form label
     border-radius: 4px;
     cursor: pointer;
   }
-  .about-me {
-    display: flex;
-    flex-direction: column;
+  .aboutme
+  {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position:relative; 
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    margin-top: 50px;
+    gap:2rem;
   }
-  
-  .about-me img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
+  section{
+    padding: 0 19%;
   }
-  
-  .about-me p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    float: left;
+  .aboutme-img{
+    width: 10px;
+    height: 10px;
+    
   }
-  
-  .about-me button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .about-me button:hover {
-    background-color: #3e8e41;
-  }
-  
   
