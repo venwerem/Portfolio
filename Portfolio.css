@@ -160,18 +160,18 @@ button {
   
 
 
-div.gallery {
+div.project{
     margin: 20px;
     border: 1px solid #ccc;
     float: left;
     width: 25%;
   }
   
-div.gallery:hover {
+div.project:hover {
     border: 1px solid #777;
   }
   
-div.gallery img {
+div.project img {
     width: 100%;
     height: auto;
   }
@@ -236,4 +236,40 @@ form label
     border-radius: 4px;
     cursor: pointer;
   }
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .about-me p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    float: left;
+  }
+  
+  .about-me button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .about-me button:hover {
+    background-color: #3e8e41;
+  }
+  
   

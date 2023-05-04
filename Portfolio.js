@@ -43,3 +43,7 @@ function typeText() {
  }
 
   typeText();
+  document.getElementById("contact-me").addEventListener("click", function() {
+    window.location.href = "mailto:youremail@example.com";
+  });
+  
